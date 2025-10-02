@@ -1,0 +1,19 @@
+:root{--noor-primary:#0a2a43;--noor-accent:#FDBE3B;--noor-bg:#0b1a2b;--radius-lg:1.25rem;--shadow-md:0 10px 30px rgba(6,22,38,.18);--shadow-sm:0 6px 20px rgba(6,22,38,.12)}
+html{scroll-behavior:smooth}body{font-family:"Plus Jakarta Sans",Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#13273c}
+.navbar{background:rgba(10,42,67,.85);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+.navbar .nav-link{color:#e8f0f7!important;opacity:.85}.navbar .nav-link.active,.navbar .nav-link:hover{opacity:1}
+.btn-noor{--bs-btn-bg:var(--noor-accent);--bs-btn-border-color:var(--noor-accent);--bs-btn-color:#1a1a1a;--bs-btn-hover-bg:#ffcf64;--bs-btn-hover-border-color:#ffcf64;--bs-btn-padding-x:1.25rem;--bs-btn-padding-y:.7rem;--bs-btn-border-radius:.75rem;font-weight:600}
+.btn-outline-noor{--bs-btn-color:#fff;--bs-btn-border-color:rgba(255,255,255,.5);--bs-btn-hover-bg:rgba(255,255,255,.12);--bs-btn-hover-border-color:rgba(255,255,255,.7);--bs-btn-border-radius:.75rem;color:#fff;border-color:rgba(255,255,255,.5)}
+.hero{background:radial-gradient(1200px 600px at 10% -10%, rgba(253,190,59,.24), transparent 50%),radial-gradient(900px 500px at 90% 10%, rgba(253,190,59,.15), transparent 50%),linear-gradient(180deg,#0b1a2b 0%,#0b1a2b 30%,#0a2a43 100%);color:#eaf2fb}
+.hero .display-hero{font-weight:800;letter-spacing:-.02em;line-height:1.05;font-size:clamp(2rem,4.2vw,3.5rem)}
+.hero-sub{color:#cfe0f2;font-size:clamp(1rem,2.2vw,1.25rem)}
+.hero-card{background: rgba(255, 255, 255, 0.11);border:1px solid #e9eef5;border-radius:var(--radius-lg);box-shadow:var(--shadow-md)}
+.section-title{font-weight:800;letter-spacing:-.01em}
+.card-modern{border:1px solid #e9eef5;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm)}
+.badge-accent{background:var(--noor-accent);color:#1a1a1a;font-weight:700}
+.icon-dot{width:10px;height:10px;border-radius:999px;display:inline-block;margin-right:.5rem;background:var(--noor-accent)}
+.table-modern{--bs-table-striped-bg:#fbfcfe;border-radius:var(--radius-lg);overflow:hidden}
+.footer{background:#081522;color:#cbd6e3;border-top:1px solid rgba(255,255,255,.08)}
+.rounded-2xl{border-radius:var(--radius-lg)!important}
+.reveal{opacity:0;transform:translateY(12px);transition:.5s ease}.reveal.show{opacity:1;transform:none}
+.offcanvas.show:not(.hiding), .offcanvas.showing {position: relative;}
