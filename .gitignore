@@ -1,5 +1,6 @@
 /.env
 /vendor
-_site/*
+/_site/*
+/.jekyll-cache
 composer.lock
 Gemfile.lock
