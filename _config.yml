@@ -1,0 +1,16 @@
+title: Noor Tutoring
+description: "Converted to Jekyll"
+url: ""          # set to https://noortutoring.com when deploying
+baseurl: ""      # keep empty if served at domain root
+timezone: America/Phoenix
+permalink: /:categories/:title/
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+defaults:
+  - scope: {path: "", type: "pages"}
+    values: {layout: default}
+  - scope: {path: "", type: "posts"}
+    values: {layout: post}

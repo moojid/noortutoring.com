@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; {{ site.time | date: '%Y' }} Noor Tutoring</p>
+  </div>
+</footer>
+
+
+<footer class="footer mt-5 py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-12 col-lg-6">
+        <div class="d-flex align-items-center gap-3">
+          <img src="/assets/img/logo.png" alt="Noor Tutoring" height="36">
+          <div>
+            <div class="fw-bold">Noor Tutoring</div>
+            <div class="small text-secondary">Focused, small-group tutoring for Grades 6–12.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 text-lg-end">
+        <a class="text-decoration-none me-3 text-secondary" href="{{ '/programs/' | relative_url }}">Programs</a>
+        <a class="text-decoration-none me-3 text-secondary" href="{{ '/schedule/' | relative_url }}">Schedule</a>
+        <a class="text-decoration-none me-3 text-secondary" href="{{ '/fees/' | relative_url }}">Fees</a>
+        <a class="text-decoration-none me-3 text-secondary" href="{{ '/contact/' | relative_url }}">Contact</a>
+      </div>
+    </div>
+    <div class="text-center small mt-3 text-secondary">&copy; <span id="year"></span> Noor Tutoring</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+  }, { threshold:.1 });
+  els.forEach(el => io.observe(el));
+});
+</script>

@@ -1,3 +1,5 @@
 /.env
 /vendor
+_site/*
 composer.lock
+Gemfile.lock
