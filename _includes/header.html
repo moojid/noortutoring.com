@@ -17,15 +17,31 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item"><a class="nav-link " href="{{ '/' | relative_url }}">Home</a></li>
-            <li class="nav-item"><a class="nav-link " href="{{ '/programs/' | relative_url }}">Programs</a></li>
-            <li class="nav-item"><a class="nav-link " href="{{ '/schedule/' | relative_url }}">Schedule</a></li>
-            <li class="nav-item"><a class="nav-link " href="{{ '/fees/' | relative_url }}">Fees</a></li>
-            <li class="nav-item"><a class="nav-link " href="{{ '/contact/' | relative_url }}">Contact</a></li>
-            <li class="nav-item ms-lg-2"><a class="btn btn-noor" href="{{ '/contact/' | relative_url }}">Enroll</a></li>
+            {% for item in site.data.navigation %}
+              <li class="nav-item">
+                <a class="nav-link " href="{{ item.url | relative_url }}"
+                  {% if page.url == item.url %}aria-current="page"{% endif %}>
+                  {{ item.title }}
+                </a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
     </nav>
   </div>
 </header>
+
+<script>
+(function(){
+  const btn = document.querySelector('.menu-toggle');
+  const list = document.getElementById('menu-list');
+  if(btn && list){
+    btn.addEventListener('click', function(){
+      const open = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !open);
+      list.classList.toggle('open', !open);
+    });
+  }
+})();
+</script>
