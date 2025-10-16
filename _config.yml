@@ -1,7 +1,7 @@
 title: Noor Tutoring
 description: "Noor Tutoring Website"
-url: "moojid.github.io"          # set to https://noortutoring.com when deploying
-baseurl: "/noortutoring.com"      # keep empty if served at domain root
+url: "https://noortutoring.com"          # set to https://noortutoring.com when deploying
+baseurl: ""      # keep empty if served at domain root #/noortutoring.com
 timezone: America/Phoenix
 permalink: /:categories/:title/
 markdown: kramdown
